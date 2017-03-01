@@ -6,7 +6,11 @@
 
     <groupId>com.fei.dataexchage</groupId>
     <artifactId>dataexchage-parent</artifactId>
+    <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>dc-sys</module>
+    </modules>
 
     <properties>
         <!-- base -->
