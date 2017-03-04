@@ -11,7 +11,7 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>dc-sys</module>
-        <module>dc-common</module>
+        <module>dc-commons</module>
     </modules>
 
     <properties>
@@ -287,11 +287,8 @@
             <artifactId>bsf-api</artifactId>
             <version>${bsf.version}</version>
         </dependency>
-        <dependency>
-            <groupId>org.apache.curator</groupId>
-            <artifactId>curator-framework</artifactId>
-            <version>${curator.version}</version>
-        </dependency>
+
+
         <dependency>
             <groupId>com.googlecode.xmemcached</groupId>
             <artifactId>xmemcached</artifactId>
