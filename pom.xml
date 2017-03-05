@@ -12,6 +12,8 @@
     <modules>
         <module>dc-sys</module>
         <module>dc-commons</module>
+        <module>dc-sys-facade</module>
+        <module>dc-sys-service</module>
     </modules>
 
     <properties>
@@ -63,7 +65,7 @@
         <fst.version>1.55</fst.version>
     </properties>
 
-
+    <dependencyManagement>
     <dependencies>
         <dependency>
             <groupId>junit</groupId>
@@ -405,6 +407,7 @@
             <version>1.25</version>
         </dependency>
     </dependencies>
+    </dependencyManagement>
     <build>
         <finalName>dataexchage-parent</finalName>
         <plugins>
