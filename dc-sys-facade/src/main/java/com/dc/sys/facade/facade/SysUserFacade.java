@@ -14,7 +14,7 @@ public interface SysUserFacade {
 
 	@GET
     @Path("/testget")
-	public void testget();
+	public String testget();
 	
     @GET
     @Path("/getUser")

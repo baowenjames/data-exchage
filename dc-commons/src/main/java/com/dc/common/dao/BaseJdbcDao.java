@@ -79,7 +79,7 @@ public class BaseJdbcDao {
      * @return Date 当前时间
      */
     public Date getCurrentTime() {
-        return this.getJdbcTemplate().queryForObject("SELECT SYSTIMESTAMP FROM DUAL", Date.class);
+        return this.getJdbcTemplate().queryForObject("SELECT UNIX_TIMESTAMP() FROM DUAL", Date.class);
     }
 
     /**
