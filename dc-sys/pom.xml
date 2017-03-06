@@ -79,9 +79,9 @@
 
     </dependencies>
     <build>
-<!--
-        <finalName>dc-sys</finalName>
--->
+
+      <!--  <finalName>dc-sys</finalName>-->
+
         <plugins>
             <plugin>
                 <groupId>org.apache.tomcat.maven</groupId>

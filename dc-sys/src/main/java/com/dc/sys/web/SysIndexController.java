@@ -33,7 +33,7 @@ public class SysIndexController {
      * @param dataYear 年份
      * @return ModelAndView 模型视图
      */
-    @RequestMapping("/sysindex.html")
+    @RequestMapping("sysindex.html")
     public ModelAndView index(HttpServletRequest request, HttpServletResponse response) {
         ModelAndView ret = new ModelAndView();
 

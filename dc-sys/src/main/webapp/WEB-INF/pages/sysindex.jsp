@@ -7,8 +7,26 @@
 <base href='<%=request.getScheme() + "://" + request.getServerName() + ":" + request.getServerPort() + request.getContextPath() + "/"%>' />
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
+
+<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/common-neptune.css" />
+<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/extjs/resources/ext-theme-neptune/ext-theme-neptune-all.css" />
+<!-- 
+<link rel="stylesheet" type="text/css" href="/dc-sys/css/common.css" />
+<link rel="stylesheet" type="text/css" href="/dc-sys/extjs/resources/ext-theme-classic/ext-theme-classic-all.css" />
+-->
+<script type="text/javascript" charset="utf-8" src="${pageContext.request.contextPath}/extjs/ext-all.gzjs"></script>
+<script type="text/javascript" charset="utf-8" src="${pageContext.request.contextPath}/extjs/ext-lang-zh_CN.js"></script>
+<script type="text/javascript" charset="utf-8">
+
+Ext.onReady(function(){
+	
+	Ext.MessageBox.alert('提示信息','Welcome to ExtJS World!!');
+	
+});
+
+</script>
+
 </head>
 <body>
-Hello World! This is cd-sys Page!
 </body>
 </html>

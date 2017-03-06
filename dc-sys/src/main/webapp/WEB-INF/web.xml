@@ -39,8 +39,26 @@
   <servlet-mapping>
       <servlet-name>cd-sys</servlet-name>
       <url-pattern>*.json</url-pattern>
-  </servlet-mapping> 
-  
+  </servlet-mapping>
+
+  <!--对*.gzjs格式的js文件进行过滤解析-->
+  <filter>
+    <filter-name>GzipFilter</filter-name>
+    <filter-class>com.dc.common.util.GzipFilter</filter-class>
+    <init-param>
+      <param-name>headers</param-name>
+      <param-value>Content-Encoding=gzip</param-value>
+    </init-param>
+  </filter>
+  <filter-mapping>
+    <filter-name>GzipFilter</filter-name>
+    <url-pattern>*.gzjs</url-pattern>
+  </filter-mapping>
+  <filter-mapping>
+    <filter-name>GzipFilter</filter-name>
+    <url-pattern>*.gzcss</url-pattern>
+  </filter-mapping>
+
  <session-config>
    <session-timeout>15</session-timeout>
  </session-config>
