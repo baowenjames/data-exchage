@@ -159,7 +159,7 @@ public class BaseJdbcDao {
      * @return String 唯一键值
      */
     public String generateKey() {
-        String sql = "SELECT '0000' || TO_CHAR(SYSTIMESTAMP, 'YYYYMMDD') FROM DUAL ";
+        String sql = "SELECT '0000' ||  date_format(now(),'%Y-%m-%d') FROM DUAL ";
         String pre = this.getJdbcTemplate().queryForObject(sql, String.class);
         String uid = UUID.randomUUID().toString().replaceAll("-", "").toUpperCase();
         return pre + uid.substring(12);

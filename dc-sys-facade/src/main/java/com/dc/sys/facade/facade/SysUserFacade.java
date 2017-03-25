@@ -20,7 +20,7 @@ public interface SysUserFacade {
 	@Path("/getById/{id}")
 	public JSONObject getById(@PathParam(value = "id") String id) throws Exception;
 
-	@POST
+	@GET
 	@Path("/getList")
 	public List<JSONObject> getList() throws Exception;
 
